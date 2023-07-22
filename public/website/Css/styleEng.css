@@ -1,0 +1,3313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Climate Crisis", cursive;
+    font-family: "Lato", sans-serif;
+    font-family: "Merriweather", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Tajawal", sans-serif;
+}
+
+:root {
+    --main-color: #09189e;
+    --sec-color: #e5f6ff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: #333;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+
+    display: none;
+}
+.vi {
+    display: inline-flex;
+}
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+.midd {
+    vertical-align: middle;
+    align-self: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.back-to-top:hover {
+    box-shadow: 0 0 14px 0 #a8a7a7;
+}
+
+.back-to-top i {
+    font-size: 24px;
+}
+
+.load {
+    width: 100%;
+    height: 100vh;
+    background-color: #09189e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2.4s;
+    -webkit-transition: 2.4s;
+    -moz-transition: 2.4s;
+    -ms-transition: 2.4s;
+    -o-transition: 2.4s;
+}
+
+/* page 1 start */
+
+.logoh {
+    background-image: url("../images/mm.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .logoh {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1025px) {
+    .logoh {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .logoh {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logoh {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.logo-content {
+    display: none;
+}
+.f {
+    animation: f ease 1s;
+    -webkit-animation: f ease 1s;
+}
+
+@keyframes f {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section {
+    margin: 8rem 0;
+}
+
+header {
+    background-color: #09189e;
+    width: 100%;
+    height: 120px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .logo img {
+    width: 96px;
+    height: 116px;
+    cursor: pointer;
+}
+
+header .container .hours {
+    display: flex;
+}
+header .container .hours i {
+    margin: 0 5px;
+    color: white;
+}
+
+header .container .hours .headerText p {
+    margin-bottom: -12px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+}
+header .container .hours .headerText h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -3px;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header .container .mail {
+    color: white;
+}
+header .container .mail i {
+    font-size: 38px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 19px;
+    padding: 0.5rem 2rem;
+    margin: 0px 0.2rem;
+}
+
+/* dropdown menu */
+
+.dropdown-item {
+    font-size: 17px;
+}
+
+.navbar-toggler {
+    height: 2.7rem;
+    padding: 0;
+}
+.navbar {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.st {
+    background-color: var(--sec-color);
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.nav-item a.active {
+    color: var(--main-color);
+    background-color: transparent;
+}
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+.langg {
+    background-color: white;
+    color: var(--main-color);
+    padding: 10px 11px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 19px;
+    font-family: "micro-regular";
+    color: black;
+    display: inline-block;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.dropdown-menu .dropdown-item {
+    margin-bottom: 10px;
+    font-family: "micro-regular";
+}
+.dropdown-menu .dropdown-item:hover {
+    color: var(--main-color);
+}
+
+.banner-home {
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.fade:not(.show) {
+    opacity: 1 !important;
+}
+
+.mySlides {
+    width: 100%;
+    height: 50vh;
+    display: none;
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.slider-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.dot {
+    /*position: absolute;
+      */
+    cursor: pointer;
+    height: 3px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slideshow-container .img1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.slideshow-container .img2 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.259),
+            rgba(62, 17, 222, 0.111)
+        ),
+        url(../images/pexels-cottonbro-studio-4069289.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slideshow-container .img3 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.259),
+            rgba(62, 17, 222, 0.111)
+        ),
+        url(../images/pexels-rdne-stock-project-6069237.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buSlide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.img1 .container .Home-text h1 {
+    font-size: 90px;
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 900;
+}
+.img2 .container .Home-text h1 {
+    font-size: 90px;
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 900;
+}
+.img3 .container .Home-text h1 {
+    font-size: 80px;
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 900;
+}
+
+.img1 .container .Home-text p {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 400;
+}
+.img2 .container .Home-text p {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 400;
+}
+.img3 .container .Home-text p {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: 400;
+}
+
+.img1 .container .Home-text a {
+    font-size: 25px;
+    margin: 0 20px;
+    font-weight: 500;
+    background-color: white;
+    color: var(--main-color);
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(82, 11, 224, 0.388);
+    border: double 0.125rem transparent;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.img2 .container .Home-text a {
+    font-size: 25px;
+    margin: 0 20px;
+    font-weight: 500;
+    background-color: white;
+    color: var(--main-color);
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(82, 11, 224, 0.388);
+    border: double 0.125rem transparent;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.img3 .container .Home-text a {
+    font-size: 25px;
+    margin: 0 20px;
+    font-weight: 500;
+    background-color: white;
+    color: var(--main-color);
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(82, 11, 224, 0.388);
+    border: double 0.125rem transparent;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.img1 .container .Home-text .main {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.img2 .container .Home-text .main {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.img3 .container .Home-text .main {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.img1 .container .Home-text .main:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+.img1 .container .Home-text a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.img2 .container .Home-text .main:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+.img2 .container .Home-text a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.img3 .container .Home-text .main:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+.img3 .container .Home-text a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.elements .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements .container .contant .row1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.elements .container .contant .row1 .car1 {
+    display: flex;
+    align-items: center;
+}
+.elements .container .contant .row1 .car2 {
+    display: flex;
+    align-items: center;
+}
+.elements .container .contant .row2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.elements .container .contant .row2 .car3 {
+    display: flex;
+    align-items: center;
+}
+.elements .container .contant .row2 .car4 {
+    display: flex;
+    align-items: center;
+}
+
+.elements .container .contant .car {
+    width: 620px;
+    height: 200px;
+    background-color: white;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    box-shadow: 0 5px 31px rgba(0, 0, 0, 0.168);
+    margin: 1.2rem 1.2rem;
+}
+
+.elements .container .contant .element-icon {
+    background-color: #e5f6ff;
+    height: 113px;
+    width: 113px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.elements .container .contant .element-icon i {
+    color: rgba(0, 0, 0, 0.768);
+    font-size: 30px;
+}
+
+.elements .container .contant .element-text h4 {
+    font-size: 25px;
+    position: relative;
+}
+.elements .container .contant .element-text h4::after {
+    content: " ";
+    position: absolute;
+    width: 75px;
+    height: 4px;
+    left: 0;
+    bottom: -8px;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.elements .container .contant .element-text p {
+    margin-top: 18px;
+    font-size: 16px;
+    width: 370px;
+    font-weight: 400;
+}
+
+.serv {
+    width: 100%;
+    height: 520px;
+    background-color: var(--sec-color);
+}
+
+.serv .container .row .serv-text h4 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.serv .container .row .serv-text h4::after {
+    content: " ";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 150px;
+    height: 5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv .container .row .serv-text p {
+    font-size: 16px;
+    width: 400px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.serv .container .row .serv-text a {
+    padding: 7px 18px;
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    border: 2px solid transparent;
+    color: white;
+}
+.serv .container .row .serv-text a:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.serv-img1 img,
+.serv-img2 img,
+.serv-img3 img,
+.serv-img4 img,
+.serv-img5 img,
+.serv-img6 img {
+    width: 130px;
+    height: 130px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.serv-img1:hover.serv-img1 img {
+    border-color: var(--main-color);
+    box-shadow: 0 4px 22px var(--main-color);
+}
+.serv-img2:hover.serv-img2 img {
+    border-color: var(--main-color);
+    box-shadow: 0 4px 22px var(--main-color);
+}
+.serv-img3:hover.serv-img3 img {
+    border-color: var(--main-color);
+    box-shadow: 0 4px 22px var(--main-color);
+}
+.serv-img4:hover.serv-img4 img {
+    border-color: var(--main-color);
+    box-shadow: 0 4px 22px var(--main-color);
+}
+.serv-img5:hover.serv-img5 img {
+    border-color: var(--main-color);
+    box-shadow: 0 4px 22px var(--main-color);
+}
+.serv-img6:hover.serv-img6 img {
+    border-color: var(--main-color);
+    box-shadow: 0 4px 22px var(--main-color);
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px;
+}
+.mid {
+    vertical-align: middle;
+    align-self: center;
+}
+.competitor {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+.competitor .container .row .competitor-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.competitor .container .row .competitor-text h5 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+.competitor .container .row .competitor-text h5::after {
+    content: " ";
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.competitor .container .row .competitor-text p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.competitor .container .row .competitor-text a {
+    padding: 10px 24px;
+    background-color: var(--main-color);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    font-weight: 500;
+    color: white;
+}
+.competitor .container .row .competitor-text a:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.card-page {
+    width: 100%;
+    background-color: var(--sec-color);
+}
+.card-page h4 {
+    width: fit-content;
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    margin: 40px auto 60px;
+}
+.card-page h4::after {
+    content: " ";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 180px;
+    height: 7px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.page-c {
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-c .card1 {
+    width: calc(100% / 3.3);
+    height: 420px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: white;
+    margin: 0px 5px 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.page-c .card1:hover {
+    box-shadow: 0 0 14px 0 #7a7979;
+}
+
+.card-na {
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.na-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.na-img i {
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.card-co {
+    width: 90%;
+    margin: 15px auto;
+    height: 60%;
+}
+.card-co h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #401274;
+    margin-bottom: 20px;
+}
+.card-co P {
+    text-align: center;
+    font-size: 15px;
+}
+
+section .CompanyAddress {
+    margin: 4rem, 0;
+}
+
+.CompanyAddress {
+    width: 100%;
+    height: fit-content;
+}
+.CompanyAddress .container .row .CompanyAddress-text h4 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.CompanyAddress .container .row .CompanyAddress-text h4::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.CompanyAddress .container .row .CompanyAddress-text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.CompanyAddress .container .row .CompanyAddress-text a {
+    padding: 10px 24px;
+    background-color: var(--main-color);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    font-weight: 500;
+    color: white;
+}
+.CompanyAddress .container .row .CompanyAddress-text a:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.CompanyAddress .container .row .CompanyAddress-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    height: fit-content;
+}
+
+footer .container .row .logo img {
+    width: 114px;
+    height: 144px;
+    cursor: pointer;
+}
+footer .container .row {
+    color: white;
+}
+
+footer .container .row .nnav a {
+    display: block;
+    margin: 10px 10px;
+    font-size: 15px;
+    text-align: center;
+}
+footer .container .row .privUse p a {
+    text-decoration: var(--sec-color) underline;
+}
+/* ff Start */
+.ff {
+    width: 100%;
+    height: 47px;
+    background-color: #131d72;
+    color: white;
+}
+.ff .container {
+    width: 100%;
+    height: 100%;
+}
+
+.ff .container p {
+    font-size: clamp(1rem, 1.1vw, 1.8rem);
+    margin-top: 20px;
+}
+
+.ss {
+    width: 100%;
+    height: 47px;
+    color: #131d72;
+}
+.ss .container {
+    width: 100%;
+    height: 100%;
+}
+
+.ss .container p {
+    font-size: clamp(1rem, 1.1vw, 1.8rem);
+    margin-top: 20px;
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+footer .container .row input {
+    display: block;
+    margin: 20px 0;
+}
+footer .container .row input[type="email"] {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+}
+footer .container .row input::placeholder {
+    color: white;
+    font-size: 14px;
+    transform: translateX(-4px);
+    -webkit-transform: translateX(-4px);
+    -moz-transform: translateX(-4px);
+    -ms-transform: translateX(-4px);
+    -o-transform: translateX(-4px);
+}
+footer .container .row input[type="submit"] {
+    padding: 8px 29px;
+    background-color: white;
+    color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border: 2px solid transparent;
+}
+footer .container .row input[type="submit"]:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* page 1 end */
+
+/* page 2 start */
+
+.banner-microsmart {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-microsmart .container p {
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.introductory-microsmart {
+    margin-top: -2rem;
+}
+
+.introductory-microsmart .container .row .img-introductory img {
+    max-width: 100%;
+    height: auto;
+}
+.introductory-microsmart .container .row .text-introductory h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.introductory-microsmart .container .row .text-introductory h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.introductory-microsmart .container .row .text-introductory p {
+    font-weight: 400;
+}
+
+.Administration-microsmart {
+    width: 100%;
+    height: 1350px;
+    background-color: var(--sec-color);
+}
+.Administration-microsmart .topp {
+    font-weight: 800;
+    font-size: 40px;
+    position: relative;
+    top: 70px;
+}
+
+.Administration-microsmart .topp::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    right: 44%;
+    width: 190px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.Administration-microsmart .container .row .img-Administration img {
+    max-width: 100%;
+    height: auto;
+}
+.Administration-microsmart .container .row .img2-Administration img {
+    max-width: 60%;
+    height: auto;
+}
+
+.Administration-microsmart .container .row .text-Administration h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.Administration-microsmart .container .row .text-Administration h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Administration-microsmart .container .row .text-Administration p {
+    font-weight: 400;
+    width: 700px;
+}
+
+.Administration-microsmart .container .row .text2-Administration h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+.Administration-microsmart .container .row .text3-Administration h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+.Administration-microsmart .container .row .text2-Administration {
+    margin-left: 80px;
+}
+.Administration-microsmart .container .row .text3-Administration {
+    margin-top: 4rem;
+}
+.Administration-microsmart .container .row .text2-Administration h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    right: 26%;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Administration-microsmart .container .row .text3-Administration h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    right: 43%;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Administration-microsmart .container .row .text2-Administration p {
+    font-weight: 400;
+    width: 430px;
+    text-align: center;
+}
+.Administration-microsmart .container .row .text3-Administration p {
+    font-weight: 400;
+    width: 608px;
+    margin: auto;
+}
+
+/* Page 2 end */
+
+/* Page 3 start */
+
+.banner-businessSolutions {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-businessSolutions .container p {
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.Solutions-businessSolutions {
+    margin-top: 4rem;
+}
+
+.Solutions-businessSolutions .container .row .img-Solutions img {
+    max-width: 100%;
+    height: auto;
+}
+.Solutions-businessSolutions .container .row .text-Solutions h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.Solutions-businessSolutions .container .row .text-Solutions h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Solutions-businessSolutions .container .row .text-Solutions p {
+    font-weight: 400;
+    width: 680px;
+}
+
+.ic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--sec-color);
+}
+
+.BusinessSolutions-Services {
+    width: 100%;
+    height: 700px;
+    background-color: var(--sec-color);
+}
+
+.BusinessSolutions-Services .container h3 {
+    font-size: 34px;
+    margin-bottom: 140px;
+    font-weight: 400;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    text-align: center;
+}
+
+.BusinessSolutions-Services .container h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 250px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.BusinessSolutions-Services .container .row .card-BusinessSolutions {
+    height: 130px;
+    width: 450px;
+    background-color: white;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin: 1rem auto;
+    box-shadow: 0 3px 14px 4px rgba(0, 0, 0, 0.31);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.BusinessSolutions-Services .container .row .BusinessSolutions-contant {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.BusinessSolutions-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
+    color: white;
+    margin-left: 25px;
+}
+
+.BusinessSolutions-Services .container .row .card-BusinessSolutions:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.BusinessSolutions-Services .container .row .text-BusinessSolutions-Services p {
+    font-size: 20px;
+    color: var(--main-color);
+    font-family: "micro-regular";
+}
+
+section.BusinessSolutions-Services {
+    margin: 0 0;
+    margin-top: 8rem;
+}
+
+/* Page 3 end */
+
+/* Page 4 start */
+
+.banner-individuals {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-individuals .container p {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.indiv-individuals {
+    margin-top: 1rem;
+}
+
+.indiv-individuals h3 {
+    font-size: 34px;
+    margin-bottom: 140px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+.indiv-individuals h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.indiv-individuals .container .row .img-individuals img {
+    max-width: 100%;
+    height: auto;
+}
+
+.indiv-individuals .container .row .text-individuals p {
+    font-weight: 400;
+    width: 680px;
+}
+
+/* Page 4 end */
+
+/* Page 5 start */
+
+.banner-organizations {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-organizations .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.organiz-organizations {
+    margin-top: 1rem;
+}
+
+.organiz-organizations h3 {
+    font-size: 34px;
+    margin-bottom: 140px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+.organiz-organizations h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.organiz-organizations .container .row .img-organizations img {
+    max-width: 100%;
+    height: auto;
+}
+
+.organiz-organizations .container .row .text-organizations p {
+    font-weight: 400;
+    width: 680px;
+}
+
+/* Page 5 end */
+
+/* page 6 start */
+
+.banner-Strategy {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-Strategy .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.Vision-Strategy {
+    margin-top: 1rem;
+}
+
+.Vision-Strategy h3.toptext {
+    font-size: 34px;
+    margin-bottom: 140px;
+    font-weight: 800;
+    position: relative;
+    top: 50px;
+}
+.Vision-Strategy h3.toptext::after {
+    content: " ";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.Vision-Strategy .container .row .img-Vision img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Vision-Strategy .container .row .text-Vision p {
+    font-weight: 400;
+    width: 680px;
+}
+.Vision-Strategy .container .row .text-Vision h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.Vision-Strategy .container .row .text-Vision h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.message-Strategy {
+    margin-top: -7rem;
+}
+
+.message-Strategy .container .row .img-message img {
+    max-width: 100%;
+    height: auto;
+}
+
+.message-Strategy .container .row .text-message p {
+    font-weight: 400;
+    width: fit-content;
+}
+.message-Strategy .container .row .text-message h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.message-Strategy .container .row .text-message h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.Objectives-Strategy {
+    background-color: var(--sec-color);
+    width: 100%;
+    height: 700px;
+    margin-top: -1rem;
+}
+
+.Objectives-Strategy h3 {
+    font-size: 34px;
+    margin-bottom: 140px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+
+.Objectives-Strategy h3::after {
+    content: " ";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.Objectives-Strategy .container .row .Object-Objectives {
+    background-color: white;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    width: 470px;
+    height: 160px;
+    margin: 1rem auto;
+}
+
+.Objectives-Strategy .container .row .Object-Objectives .img-Object {
+    background-color: var(--main-color);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.Objectives-Strategy .container .row .Object-Objectives .img-Object img {
+    width: 50px;
+    height: 50px;
+}
+
+.Objectives-Strategy .container .row .Object-Objectives .text-Object p {
+    font-size: 16px;
+    width: 300px;
+    font-weight: 400;
+}
+
+section.Objectives-Strategy {
+    margin: 0 0;
+    margin-top: 8rem;
+}
+
+/* page 6 end */
+
+/* page 7 start */
+
+.banner-businessSolutionsIT {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-businessSolutionsIT .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.businessSolutions-businessSolutionsIT {
+    margin-top: 3rem;
+}
+
+.businessSolutions-businessSolutionsIT
+    .container
+    .row
+    .img-businessSolutionsIT
+    img {
+    max-width: 100%;
+    height: auto;
+}
+.businessSolutions-businessSolutionsIT
+    .container
+    .row
+    .text-businessSolutionsIT
+    h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.businessSolutions-businessSolutionsIT
+    .container
+    .row
+    .text-businessSolutionsIT
+    h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.businessSolutions-businessSolutionsIT
+    .container
+    .row
+    .text-businessSolutionsIT
+    p {
+    font-weight: 400;
+}
+
+.Advantages-businessSolutionsIT {
+    width: 100%;
+    background-color: var(--sec-color);
+    height: fit-content;
+}
+
+.Advantages-businessSolutionsIT h3 {
+    font-size: 34px;
+    margin-bottom: 140px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+
+.Advantages-businessSolutionsIT h3::after {
+    content: " ";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.Advantages-businessSolutionsIT .container .row .Ad-Advantages {
+    background-color: white;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    width: 450px;
+    height: 140px;
+    margin: 1rem auto;
+}
+
+.Advantages-businessSolutionsIT .container .row .Ad-Advantages .img-Ad {
+    background-color: var(--main-color);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 30px 0;
+}
+
+.Advantages-businessSolutionsIT .container .row .Ad-Advantages .img-Ad img {
+    width: 50px;
+    height: 50px;
+}
+
+.Advantages-businessSolutionsIT .container .row .Ad-Advantages .text-Ad p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.bann-businessSolutionsIT {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-alex-green-5699456.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.businessSolutions2-businessSolutionsIT {
+    margin-top: 4rem;
+}
+
+.businessSolutions2-businessSolutionsIT .container {
+    background-color: var(--main-color);
+    padding: 30px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 0 #7a7979;
+}
+
+/* page 7 end */
+
+/* page 8 start */
+
+.banner-ProgrammingWebsites {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-ProgrammingWebsites .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.Websites-ProgrammingWebsites {
+    margin: 0;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.Websites-ProgrammingWebsites .container .row .img-Websites img {
+    max-width: 100%;
+    height: auto;
+}
+.Websites-ProgrammingWebsites .container .row .text-Websites h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.Websites-ProgrammingWebsites .container .row .text-Websites h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Websites-ProgrammingWebsites .container .row .text-Websites p {
+    font-weight: 400;
+    width: 670px;
+}
+
+.bann-ProgrammingWebsites {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-alex-green-5699456.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Websites2-ProgrammingWebsites .container {
+    background-color: var(--main-color);
+    padding: 30px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 0 #7a7979;
+}
+
+.container .common_text p {
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.container .common_text a {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(82, 11, 224, 0.388);
+    border: double 0.125rem transparent;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.container .common_text a:hover {
+    background-color: transparent;
+    color: var(--sec-color);
+    border: double 0.125rem var(--sec-color);
+}
+
+/* page 8 end */
+
+/* Page 9 start */
+
+.banner-PhoneApplications {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-PhoneApplications .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.Phone-PhoneApplications {
+    margin: 0;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.Phone-PhoneApplications .container .row .img-Phone img {
+    max-width: 100%;
+    height: auto;
+}
+.Phone-PhoneApplications .container .row .text-Phone h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.Phone-PhoneApplications .container .row .text-Phone h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Phone-PhoneApplications .container .row .text-Phone p {
+    font-weight: 400;
+    width: 670px;
+}
+
+.bann-PhoneApplications {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-alex-green-5699456.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Phone2-PhoneApplications .container {
+    background-color: var(--main-color);
+    padding: 30px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 0 #7a7979;
+}
+
+/* page 9 end */
+
+/* page 10 start */
+
+.banner-graphicDesign {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-graphicDesign .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.graphic-graphicDesign {
+    margin: 0;
+    margin-bottom: 9rem;
+    margin-top: 2rem;
+}
+
+.graphic-graphicDesign .container .row .img-graphic img {
+    max-width: 100%;
+    height: auto;
+}
+.graphic-graphicDesign .container .row .text-graphic h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.graphic-graphicDesign .container .row .text-graphic h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.graphic-graphicDesign .container .row .text-graphic p {
+    font-weight: 400;
+    width: 670px;
+}
+
+.bann-graphicDesign {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-alex-green-5699456.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.graphic2-graphicDesign .container {
+    background-color: var(--main-color);
+    padding: 30px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 0 #7a7979;
+}
+
+/* page 10 end */
+
+/* page 11 start */
+
+.banner-MotionGraphic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-MotionGraphic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.Motion-MotionGraphic {
+    margin: 0;
+    margin-bottom: 9rem;
+    margin-top: 2rem;
+}
+
+.Motion-MotionGraphic .container .row .img-Motion img {
+    max-width: 100%;
+    height: auto;
+}
+.Motion-MotionGraphic .container .row .text-Motion h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.Motion-MotionGraphic .container .row .text-Motion h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.Motion-MotionGraphic .container .row .text-Motion p {
+    font-weight: 400;
+    width: 670px;
+}
+
+.bann-MotionGraphic {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-alex-green-5699456.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Motion2-MotionGraphic .container {
+    background-color: var(--main-color);
+    padding: 30px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 0 #7a7979;
+}
+
+/* page 11 end */
+
+/* page 12 start */
+
+.banner-networks {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-networks .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.net-networks {
+    margin: 0;
+    margin-bottom: 9rem;
+    margin-top: 2rem;
+}
+
+.net-networks .container .row .img-net img {
+    max-width: 100%;
+    height: auto;
+}
+.net-networks .container .row .text-net h3 {
+    font-size: 46px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+}
+.net-networks .container .row .text-net h3::after {
+    content: " ";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+.net-networks .container .row .text-net p {
+    font-weight: 400;
+    width: 670px;
+}
+
+.bann-networks {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-alex-green-5699456.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.net2-networks .container {
+    background-color: var(--main-color);
+    padding: 30px 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 0 #7a7979;
+}
+
+/* page 12 end */
+
+.card-page {
+    width: 100%;
+    background-color: var(--sec-color);
+    padding: 20px 0;
+}
+.card-page h4 {
+}
+
+.page-c {
+    width: 85%;
+    height: fit-content;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-c .card1 {
+    width: calc(100% / 3.3);
+    height: 420px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: white;
+    margin: 0px 5px 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.page-c .card1:hover {
+    box-shadow: 0 0 14px 0 #7a7979;
+}
+
+.card-na {
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.na-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.na-img i {
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.card-co {
+    width: 90%;
+    margin: 15px auto;
+    height: 60%;
+}
+.card-co h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #401274;
+    margin-bottom: 20px;
+}
+.card-co P {
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (min-width: 769px) and (max-width: 1185px) {
+    .page-c .card1 {
+        width: calc(100% / 2.3);
+        height: 400px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        background-color: white;
+        margin: 20px 5px;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 887px) {
+    .page-c .card1 {
+        width: calc(100% / 1.1);
+        height: 400px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        background-color: white;
+        margin: 20px 5px;
+    }
+    .page-c {
+        width: 90%;
+        height: fit-content;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 509px) {
+    .page-c .card1 {
+        width: 100%;
+        height: 400px;
+    }
+    .card-co h1 {
+        text-align: center;
+        font-size: 20px;
+        color: #401274;
+        margin-bottom: 20px;
+    }
+    .card-co P {
+        text-align: center;
+        font-size: 13px;
+    }
+    .page-c {
+        width: 95%;
+        height: fit-content;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* start serv */
+
+a.servA {
+    padding: 10px 28px;
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    border: 2px solid transparent;
+}
+a.servA:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.serv-business-servArabic {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.banner-businessSolutions-servArabic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-businessSolutions-servArabic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    margin-top: 93px;
+    font-family: "micro-bold";
+}
+
+.serv-business-servArabic h3.ff {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-business-servArabic h3.ff::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-business-servArabic h3.ss {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-business-servArabic h3.ss::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-business-servArabic .container .row .img-business-servArabic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serv-business-servArabic .container .row .text-business-servArabic p {
+    font-weight: 400;
+    width: fit-content;
+    font-family: "micro-regular";
+}
+.serv-business-servArabic .container .row .text-business-servArabic h3 {
+    font-family: "micro-bold";
+    position: relative;
+    margin-bottom: 27px;
+    font-weight: 600;
+}
+.serv-business-servArabic .container .row .text-business-servArabic h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-design-servArabic {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.banner-design-servArabic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-design-servArabic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    margin-top: 93px;
+    font-family: "micro-bold";
+}
+
+.serv-design-servArabic h3.ff {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-design-servArabic h3.ff::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-design-servArabic h3.ss {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-design-servArabic h3.ss::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-design-servArabic .container .row .img-design-servArabic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serv-design-servArabic .container .row .text-design-servArabic p {
+    font-weight: 400;
+    width: fit-content;
+    font-family: "micro-regular";
+}
+.serv-design-servArabic .container .row .text-design-servArabic h3 {
+    font-family: "micro-bold";
+    position: relative;
+    margin-bottom: 27px;
+    font-weight: 600;
+}
+.serv-design-servArabic .container .row .text-design-servArabic h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-digitalTransformation-servArabic {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.banner-digitalTransformation-servArabic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-digitalTransformation-servArabic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    font-family: "micro-bold";
+    margin: 93px 0;
+}
+
+.serv-digitalTransformation-servArabic h3.ff {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-digitalTransformation-servArabic h3.ff::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-digitalTransformation-servArabic h3.ss {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-digitalTransformation-servArabic h3.ss::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-digitalTransformation-servArabic
+    .container
+    .row
+    .img-digitalTransformation-servArabic
+    img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serv-digitalTransformation-servArabic
+    .container
+    .row
+    .text-digitalTransformation-servArabic
+    p {
+    font-weight: 400;
+    width: fit-content;
+}
+.serv-digitalTransformation-servArabic
+    .container
+    .row
+    .text-digitalTransformation-servArabic
+    h3 {
+    font-family: "micro-bold";
+    position: relative;
+    margin-bottom: 27px;
+    font-weight: 600;
+}
+.serv-digitalTransformation-servArabic
+    .container
+    .row
+    .text-digitalTransformation-servArabic
+    h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-networks-servArabic {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.banner-networks-servArabic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-networks-servArabic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    margin-top: 93px;
+    font-family: "micro-bold";
+}
+
+.serv-networks-servArabic h3.ff {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-networks-servArabic h3.ff::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-networks-servArabic h3.ss {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+    font-weight: 600;
+}
+
+.serv-networks-servArabic h3.ss::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-networks-servArabic .container .row .img-networks-servArabic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serv-networks-servArabic .container .row .text-networks-servArabic p {
+    font-weight: 400;
+    width: fit-content;
+    font-family: "micro-regular";
+}
+.serv-networks-servArabic .container .row .text-networks-servArabic h3 {
+    font-family: "micro-bold";
+    position: relative;
+    margin-bottom: 27px;
+    font-weight: 600;
+}
+.serv-networks-servArabic .container .row .text-networks-servArabic h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-OrganizationTraining-servArabic {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner-OrganizationTraining-servArabic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-OrganizationTraining-servArabic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    margin-top: 93px;
+    font-family: "micro-bold";
+}
+.serv-OrganizationTraining-servArabic h3.ff {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+}
+
+.serv-OrganizationTraining-servArabic h3.ff::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-OrganizationTraining-servArabic h3.ss {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+    font-family: "micro-bold";
+}
+
+.serv-OrganizationTraining-servArabic h3.ss::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-OrganizationTraining-servArabic
+    .container
+    .row
+    .img-OrganizationTraining-servArabic
+    img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serv-OrganizationTraining-servArabic
+    .container
+    .row
+    .text-OrganizationTraining-servArabic
+    p {
+    font-weight: 400;
+    width: fit-content;
+}
+.serv-OrganizationTraining-servArabic
+    .container
+    .row
+    .text-OrganizationTraining-servArabic
+    h3 {
+    position: relative;
+    margin-bottom: 27px;
+}
+.serv-OrganizationTraining-servArabic
+    .container
+    .row
+    .text-OrganizationTraining-servArabic
+    h3::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-personnelTraining-servArabic {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner-personnelTraining-servArabic {
+    width: 100%;
+    height: calc(100vh - 70px - 250px);
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.321),
+            rgba(62, 17, 222, 0.103)
+        ),
+        url(../images/pexels-ken-tomita-389818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-personnelTraining-servArabic .container p {
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+    margin-top: 93px;
+}
+.serv-personnelTraining-servArabic h3.ff {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+}
+
+.serv-personnelTraining-servArabic h3.ff::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-personnelTraining-servArabic h3.ss {
+    font-size: 34px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50px;
+}
+
+.serv-personnelTraining-servArabic h3.ss::after {
+    content: " ";
+    position: absolute;
+    bottom: -19px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.serv-personnelTraining-servArabic
+    .container
+    .row
+    .img-personnelTraining-servArabic
+    img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serv-personnelTraining-servArabic
+    .container
+    .row
+    .text-personnelTraining-servArabic
+    p {
+    font-weight: 400;
+    width: fit-content;
+}
+.serv-personnelTraining-servArabic
+    .container
+    .row
+    .text-personnelTraining-servArabic
+    h3 {
+    position: relative;
+    margin-bottom: 27px;
+}
+.serv-personnelTraining-servArabic
+    .container
+    .row
+    .text-personnelTraining-servArabic
+    h3::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    width: 180px;
+    height: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--main-color);
+}
+/* End serv */
+
+/* Start privacy  */
+
+.privacy,
+.use {
+    line-height: 1.6;
+    margin-bottom: 8rem;
+    margin-top: -1rem;
+}
+
+.privacy .container h1,
+.use .container h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 70px;
+    margin-top: 80px;
+    position: relative;
+}
+.privacy .container h1::after,
+.use .container h1::after {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 26%;
+    background-color: var(--main-color);
+    right: 50%;
+    bottom: -16px;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.privacy .container p,
+.use .container p {
+    margin-bottom: 10px;
+
+    width: fit-content;
+}
+
+.privacy .container ol,
+.use .container ol {
+    margin-right: 10px;
+}
+
+.privacy .container ol li h3,
+.use .container ol li h3 {
+    color: var(--main-color);
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.privacy .container ol li ul li,
+.use .container ol li ul li {
+    list-style: square;
+    margin: 10px 0;
+    font-family: "micro-regular";
+}
+.mmyyyy {
+    font-weight: 600;
+}
+
+/* End privacy  */
